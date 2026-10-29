@@ -1,0 +1,32 @@
+[
+  {
+    "WarehouseItemId": 1,
+    "SupplierId": 1,
+    "QuantityChanged": 10,
+    "OperationType": "In"
+  },
+  {
+    "WarehouseItemId": 1,
+    "SupplierId": 1,
+    "QuantityChanged": 2,
+    "OperationType": "In"
+  },
+  {
+    "WarehouseItemId": 2,
+    "SupplierId": 2,
+    "QuantityChanged": 25,
+    "OperationType": "In"
+  },
+  {
+    "WarehouseItemId": 3,
+    "SupplierId": 2,
+    "QuantityChanged": 10,
+    "OperationType": "In"
+  },
+  {
+    "WarehouseItemId": 4,
+    "SupplierId": 3,
+    "QuantityChanged": 5,
+    "OperationType": "In"
+  }
+]

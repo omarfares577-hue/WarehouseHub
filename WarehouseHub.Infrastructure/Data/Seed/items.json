@@ -1,0 +1,30 @@
+[
+  {
+    "Name": "ThinkPad E16 Gen 2",
+    "Sku": "LAP-LENOVO-E16",
+    "Price": 850.00,
+    "StockQuantity": 15,
+    "CategoryId": 2
+  },
+  {
+    "Name": "Logitech MX Master 3S Wireless Mouse",
+    "Sku": "ACC-LOGI-MX3S",
+    "Price": 99.99,
+    "StockQuantity": 50,
+    "CategoryId": 2
+  },
+  {
+    "Name": "Samsung 27-Inch 4K Monitor",
+    "Sku": "MON-SAMSUNG-4K27",
+    "Price": 320.50,
+    "StockQuantity": 20,
+    "CategoryId": 2
+  },
+  {
+    "Name": "Heavy Duty Pallet Jack 3-Ton",
+    "Sku": "EQP-PALLET-3T",
+    "Price": 450.00,
+    "StockQuantity": 8,
+    "CategoryId": 3
+  }
+]

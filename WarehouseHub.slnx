@@ -1,0 +1,16 @@
+<Solution>
+  <Folder Name="/Docker/">
+    <File Path="docker-compose.yml" />
+    <File Path="Dockerfile" />
+  </Folder>
+  <Folder Name="/Source/">
+    <Project Path="WarehouseHub.Api/WarehouseHub.Api.csproj" />
+    <Project Path="WarehouseHub.Core/WarehouseHub.Core.csproj" />
+    <Project Path="WarehouseHub.Domain/WarehouseHub.Domain.csproj" />
+    <Project Path="WarehouseHub.Infrastructure/WarehouseHub.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/Test/">
+    <Project Path="WarehouseHub.IntegrationTests/WarehouseHub.IntegrationTests.csproj" Id="2573e16c-1acf-4141-9d25-04a80ddf9200" />
+    <Project Path="WarehouseHub.UnitTests/WarehouseHub.UnitTests.csproj" Id="5327b920-0c0f-4665-8824-d96551c6d968" />
+  </Folder>
+</Solution>

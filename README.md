@@ -41,6 +41,48 @@ The solution is organized into distinct layers to ensure separation of concerns 
 ## ⚙️ Getting Started Locally
 To run this project on your local machine for development or testing purposes, follow these steps:
 
-1. **Clone the repository:**
-   ```bash
-   git clone [https://github.com/omarfares577-hue/WarehouseHub.git](https://github.com/omarfares577-hue/WarehouseHub.git)
+### Prerequisites
+* [.NET SDK](https://dotnet.microsoft.com/download)
+* SQL Server (LocalDB, Express, or full instance)
+* EF Core CLI tools: `dotnet tool install --global dotnet-ef`
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/omarfares577-hue/WarehouseHub.git
+cd WarehouseHub
+```
+
+### 2. Configure the connection string
+Open `appsettings.Development.json` in the API project and update the connection string with your local SQL Server instance:
+
+```json
+"ConnectionStrings": {
+  "DefaultConnection": "Server=YOUR_SERVER;Database=WarehouseHubDb;Trusted_Connection=True;TrustServerCertificate=True;"
+}
+```
+
+> If you use SQL Server Authentication instead of Windows Authentication, use this version:
+> ```json
+> "ConnectionStrings": {
+>   "DefaultConnection": "Server=YOUR_SERVER;Database=WarehouseHubDb;User Id=YOUR_USER;Password=YOUR_PASSWORD;TrustServerCertificate=True;"
+> }
+> ```
+
+### 3. Apply database migrations
+Run the following command in your terminal to set up the database:
+
+```bash
+dotnet ef database update --project WarehouseHub.Infrastructure --startup-project WarehouseHub.Api
+```
+
+### 4. Run the application
+```bash
+dotnet run --project WarehouseHub.Api
+```
+
+Then open `https://localhost:<port>/swagger` to explore the endpoints.
+
+---
+
+## 👨‍💻 Author
+**Omar Sami**

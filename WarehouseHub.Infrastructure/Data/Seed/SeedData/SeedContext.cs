@@ -85,7 +85,5 @@ namespace WarehouseHub.Infrastructure.Data.Seed.SeedData
             }
         }
     
-    }
-    git --version
-}
+    }}
 

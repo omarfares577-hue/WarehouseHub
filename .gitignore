@@ -5,5 +5,5 @@ obj/
 *.user
 *.suo
 appsettings.Development.json
-
+docker-compose
 

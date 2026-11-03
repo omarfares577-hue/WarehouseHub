@@ -27,7 +27,7 @@ namespace WarehouseHub.Api
 
             var builder = WebApplication.CreateBuilder(args);
 
-            // Add services to the container.
+         
 
             builder.Services.AddControllers()
                 .AddJsonOptions(options =>
@@ -102,7 +102,7 @@ namespace WarehouseHub.Api
                 {
                     var context = services.GetRequiredService<WarehouseContext>();
 
-                    // التصحيح هنا: تخطي الـ MigrateAsync في بيئة الـ Testing لأنها خاصة بـ SQL Server
+                   
                     if (!app.Environment.IsEnvironment("Testing"))
                     {
                         await context.Database.MigrateAsync();
